@@ -2,13 +2,6 @@
 ```
 docker run -d -p 80:80 docker/getting-started
 ```
-
-# Getting started
-
-This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/.
-
-The application is based on the application from the getting started tutorial at https://github.com/docker/getting-started
-
 # Install Docker in AWS Ami Linux 2023
 ```
 sudo dnf install git -y
@@ -55,4 +48,11 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+
+
+# Getting started
+
+This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/.
+
+The application is based on the application from the getting started tutorial at https://github.com/docker/getting-started
 
