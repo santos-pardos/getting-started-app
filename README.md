@@ -48,7 +48,10 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-
+# Getting started
+```
+docker run --network todo-app-default --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
+```
 
 # Getting started
 
