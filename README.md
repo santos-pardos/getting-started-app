@@ -50,7 +50,7 @@ newgrp docker
 ```
 # Getting started
 ```
-docker run --network todo-app-default --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
+docker run --network getting-started-app_default --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
 ```
 
 # Getting started
