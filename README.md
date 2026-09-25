@@ -48,7 +48,23 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-# Getting started
+# Docker scout
+```
+# 1. Crea la ruta donde Docker busca complementos de usuario
+mkdir -p ~/.docker/cli-plugins
+
+# 2. Descarga e instala el binario directamente en esa ruta
+curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s -- -b ~/.docker/cli-plugins
+```
+
+```
+docker scout version
+docker login
+docker scout quickview <tu_imagen>:<tag>
+docker scout cves <tu_imagen>:<tag>
+docker scout recommendations <tu_imagen>:<tag>
+```
+# Cloudbeaver
 ```
 docker run --network getting-started-app_default --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
 ```
