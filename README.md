@@ -82,18 +82,23 @@ https://infn-bari-school.github.io/docker-tutorial/image/multistage/multistage-e
 ```
 
 # .Net App Microsoft
-```
+
 Instalar .Net 10 en Ami Linux 2023
 
 SDK completo
+```
 sudo dnf install -y dotnet-sdk-10.0
-
+```
 Runtime
+```
 sudo dnf install -y dotnet-runtime-10.0
-
+```
 Comprobar version
+```
 dotnet --version
+```
 
+```
 https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows&pivots=dotnet-10-0
 ```
 
