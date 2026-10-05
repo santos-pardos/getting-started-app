@@ -1,7 +1,12 @@
-# Manual del workshop 
+# Docker Workshop - Getting-Started Docker
 ```
 docker run -d -p 80:80 docker/getting-started
 ```
+# Visual Code Editor in AWS EC2 (Fedora, Ubuntu)
+```
+https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Compute/EC2/Code_Editor
+```
+
 # Install Docker in AWS Ami Linux 2023
 ```
 sudo dnf install git -y
@@ -24,6 +29,7 @@ curl -L https://github.com/docker/buildx/releases/download/v0.17.0/buildx-v0.17.
 chmod +x ~/.docker/cli-plugins/docker-buildx
 docker buildx version
 ```
+
 # Install Docker AWS Ubuntu 
 ```
 sudo apt update && sudo apt upgrade -y
@@ -48,6 +54,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+
 # Docker scout
 ```
 # 1. Crea la ruta donde Docker busca complementos de usuario
@@ -64,10 +71,12 @@ docker scout quickview <tu_imagen>:<tag>
 docker scout cves <tu_imagen>:<tag>
 docker scout recommendations <tu_imagen>:<tag>
 ```
+
 # Cloudbeaver
 ```
 docker run --network getting-started-app_default --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
 ```
+
 # C App Multi Stages
 ```
 FROM gcc:9.5.0 AS compiler
