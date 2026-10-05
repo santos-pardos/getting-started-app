@@ -9,7 +9,7 @@ https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Compute/EC2/Code_
 
 # Visual Studio Code. Remote SSH to EC2
 ```
-[https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Compute/EC2/Code_Editor](https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Containers/Vsc_Remote_Ec2)
+https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Containers/Vsc_Remote_Ec2
 ```
 
 # Install Docker in AWS Ami Linux 2023
