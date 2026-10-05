@@ -68,6 +68,34 @@ docker scout recommendations <tu_imagen>:<tag>
 ```
 docker run --network getting-started-app_default --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
 ```
+# C App Multi Stages
+```
+FROM gcc:9.5.0 AS compiler
+ADD https://raw.githubusercontent.com/docker-library/hello-world/master/hello.c  /hello.c
+RUN make hello
+FROM ubuntu
+COPY --from=compiler /hello /hello
+CMD /hello
+```
+```
+https://infn-bari-school.github.io/docker-tutorial/image/multistage/multistage-example/#home-work
+```
+
+# .Net App Microsoft
+```
+Instalar .Net 10 en Ami Linux 2023
+
+SDK completo
+sudo dnf install -y dotnet-sdk-10.0
+
+Runtime
+sudo dnf install -y dotnet-runtime-10.0
+
+Comprobar version
+dotnet --version
+
+https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows&pivots=dotnet-10-0
+```
 
 # Getting started
 
