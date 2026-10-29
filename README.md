@@ -1,6 +1,6 @@
 # Docker Workshop - Getting-Started Docker
 ```
-docker run -d -p 80:80 docker/getting-started
+docker run -d -p 3389:80 docker/getting-started
 ```
 # Visual Code Editor in AWS EC2 (Fedora, Ubuntu)
 ```
